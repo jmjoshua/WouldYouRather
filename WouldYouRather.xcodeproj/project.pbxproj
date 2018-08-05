@@ -12,6 +12,7 @@
 		0320354921175627007455B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0320354721175627007455B9 /* Main.storyboard */; };
 		0320354B21175627007455B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0320354A21175627007455B9 /* Assets.xcassets */; };
 		0320354E21175627007455B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0320354C21175627007455B9 /* LaunchScreen.storyboard */; };
+		47B27E890280B42A28C7C6C4 /* Pods_WouldYouRather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9953CF1D7FDCEDD6A196FBA2 /* Pods_WouldYouRather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0320354A21175627007455B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0320354D21175627007455B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0320354F21175627007455B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7F2767E4C46C59A538B20D /* Pods-WouldYouRather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WouldYouRather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WouldYouRather/Pods-WouldYouRather.debug.xcconfig"; sourceTree = "<group>"; };
+		9953CF1D7FDCEDD6A196FBA2 /* Pods_WouldYouRather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WouldYouRather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75D0A15B6A4EFED1D79546F /* Pods-WouldYouRather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WouldYouRather.release.xcconfig"; path = "Pods/Target Support Files/Pods-WouldYouRather/Pods-WouldYouRather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B27E890280B42A28C7C6C4 /* Pods_WouldYouRather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0320354221175627007455B9 /* WouldYouRather */,
 				0320354121175627007455B9 /* Products */,
+				D0E74FDBD2D232054A58344B /* Pods */,
+				DE9FA147165801281A687955 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = WouldYouRather;
 			sourceTree = "<group>";
 		};
+		D0E74FDBD2D232054A58344B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C7F2767E4C46C59A538B20D /* Pods-WouldYouRather.debug.xcconfig */,
+				D75D0A15B6A4EFED1D79546F /* Pods-WouldYouRather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE9FA147165801281A687955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9953CF1D7FDCEDD6A196FBA2 /* Pods_WouldYouRather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0320355221175627007455B9 /* Build configuration list for PBXNativeTarget "WouldYouRather" */;
 			buildPhases = (
+				94D04FE311CAFADEAAA0EAED /* [CP] Check Pods Manifest.lock */,
 				0320353C21175627007455B9 /* Sources */,
 				0320353D21175627007455B9 /* Frameworks */,
 				0320353E21175627007455B9 /* Resources */,
@@ -130,6 +155,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94D04FE311CAFADEAAA0EAED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WouldYouRather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0320353C21175627007455B9 /* Sources */ = {
@@ -272,6 +318,7 @@
 		};
 		0320355321175627007455B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C7F2767E4C46C59A538B20D /* Pods-WouldYouRather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +333,7 @@
 		};
 		0320355421175627007455B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D75D0A15B6A4EFED1D79546F /* Pods-WouldYouRather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
