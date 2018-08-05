@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var questionLabel: CLTypingLabel!
     @IBOutlet weak var optionOneButton: UIButton!
     @IBOutlet weak var optionTwoButton: UIButton!
     @IBOutlet weak var newQuestion: UIButton!
