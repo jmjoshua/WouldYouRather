@@ -3,7 +3,10 @@ An iOS based quiz game that cycles through random questions and outputs the resu
 
 
 ## Simple Use
-Simply read the question and select the option that you think is right!
+Simply read the question and consider the two options
+
+
+Now select the best option!
 
 
 ## Where to Find Me
