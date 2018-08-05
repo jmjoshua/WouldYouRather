@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,8 +38,21 @@
                                     <action selector="optionTwoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h60-KV-jKf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmS-sb-N7d">
+                                <rect key="frame" x="140" y="441" width="97" height="30"/>
+                                <state key="normal" title="New Question"/>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAu-Y5-sVa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msi-QJ-hZ7">
+                                <rect key="frame" x="140" y="81" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you rather have $1,000,000 now or $0.01 doubled for 30 days?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS9-24-7xL">
-                                <rect key="frame" x="12" y="111" width="352" height="96"/>
+                                <rect key="frame" x="11" y="152" width="352" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="nvT-YK-QXB"/>
                                 </constraints>
@@ -46,26 +60,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmS-sb-N7d">
-                                <rect key="frame" x="140" y="441" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="New Question"/>
-                                <connections>
-                                    <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAu-Y5-sVa"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="a2S-Fv-OAt" firstAttribute="top" secondItem="WAU-VG-I6g" secondAttribute="bottom" constant="41" id="5zk-J9-zWm"/>
+                            <constraint firstItem="AmS-sb-N7d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="Hwh-h5-ckV"/>
+                            <constraint firstItem="AmS-sb-N7d" firstAttribute="top" secondItem="WAU-VG-I6g" secondAttribute="bottom" constant="8" symbolic="YES" id="Trc-37-ska"/>
                             <constraint firstItem="WAU-VG-I6g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VBq-ng-ntf"/>
                             <constraint firstItem="WAU-VG-I6g" firstAttribute="trailing" secondItem="a2S-Fv-OAt" secondAttribute="trailing" id="dFc-An-vmq"/>
-                            <constraint firstItem="RS9-24-7xL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="91" id="efz-ak-hVf"/>
+                            <constraint firstItem="RS9-24-7xL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="efz-ak-hVf"/>
                             <constraint firstItem="RS9-24-7xL" firstAttribute="centerX" secondItem="WAU-VG-I6g" secondAttribute="centerX" id="etW-F9-KVg"/>
                             <constraint firstItem="WAU-VG-I6g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="mjn-I7-9Mg"/>
-                            <constraint firstItem="RS9-24-7xL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="qh6-6n-LHH"/>
+                            <constraint firstItem="msi-QJ-hZ7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="61" id="qBe-Hk-Y2k"/>
+                            <constraint firstItem="RS9-24-7xL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="qh6-6n-LHH"/>
                             <constraint firstItem="WAU-VG-I6g" firstAttribute="leading" secondItem="a2S-Fv-OAt" secondAttribute="leading" id="tZC-47-AyF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a2S-Fv-OAt" secondAttribute="bottom" constant="163" id="wya-oX-63P"/>
+                            <constraint firstItem="msi-QJ-hZ7" firstAttribute="leading" secondItem="AmS-sb-N7d" secondAttribute="leading" id="zJ3-1W-44d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
