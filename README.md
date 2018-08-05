@@ -11,8 +11,6 @@ An iOS based quiz game that cycles through random questions and outputs the resu
 ### Now select the best option!
 <p align="center">
   <img src="src/shot2.png" width="350" alt="accessibility text">
-</p>
-<p align="center">
   <img src="src/shot3.png" width="350" alt="accessibility text">
 </p>
 
