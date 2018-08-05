@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 8c2c437d6041b594b4e134d2cb39c17a6215b924
+PODS:
+  - CLTypingLabel (0.3.0)
+
+DEPENDENCIES:
+  - CLTypingLabel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CLTypingLabel
+
+SPEC CHECKSUMS:
+  CLTypingLabel: e5f3adf9467a38664a505e6475c23946c3b3c424
+
+PODFILE CHECKSUM: 1963bbf8a78d8a534b2a8fe01445e5e07c1e9555
 
 COCOAPODS: 1.5.3
